@@ -20,7 +20,7 @@ fs.readdir('./Homework5',(err,files)=>{
                     if(err2){
                         return err2.message;
                     }
-                    console.log(`Moved file ${value} with size ${stats.size} bytes to newDir`);
+                    console.log(`Moved file ${value} with size ${stats.size} bytes to newDir folder.`);
                 });
            }
         });

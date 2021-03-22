@@ -2,9 +2,9 @@
 const fs = require('fs');
 const os = require('os');
 const date = new Date();
-const newFileName = `./${date.getMonth()}_${date.getDate()}_${date.getHours()}_${date.getMinutes()}_${date.getSeconds()}.txt`;
+const newFileName = `./${date.getMonth()+1}_${date.getDate()}_${date.getHours()}_${date.getMinutes()}_${date.getSeconds()}.txt`;
 fs.rename(`./${os.userInfo().username}.txt`,newFileName,(err)=>{
     if(err){
         return err.message;
     }
-})
+});
